@@ -1,0 +1,42 @@
+<%- include('header'); -%>
+
+
+
+<form class="" action="/homepage" method="post">
+  <button type="submit" class="btn btn-danger btnMovieSearch" name="button">Home</button>
+</form>
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-lg-4">
+      <img src=" <%= posterr %> " class="movieimg" alt="cannot load image">
+    </div>
+
+    <div class="col-lg-6">
+      <h3 class="moviedetails">Title: <%= titlee %> </h3>
+      <h6 class="moviedet">Plot:      <%= plott %></h6>
+      <h6 class="moviedet">Year:      <%= yearr %></h6>
+      <h6 class="moviedet">Rated:     <%= ratedd %></h6>
+      <h6 class="moviedet">Released:  <%= releasedd %></h6>
+      <h6 class="moviedet">Runtime:   <%= runtimee %></h6>
+      <h6 class="moviedet">Genre:     <%= genree %></h6>
+      <h6 class="moviedet">Director:  <%= directorr %></h6>
+      <h6 class="moviedet">Writer:    <%= writerr %></h6>
+      <h6 class="moviedet">Actors:    <%= actorss %></h6>
+      <h6 class="moviedet">Language:  <%= languagee %></h6>
+      <h6 class="moviedet">Country:   <%= countryy %></h6>
+      <h6 class="moviedet">Awards:    <%= awardss %></h6>
+    </div>
+    <div class="col-lg-2 imdbrow">
+      <img class="imdblogo" src="images/imdblogo.png" alt="">
+      <h6 class="moviedet">Rating:    ⭐<%= ratingg %></h6>
+      <h6 class="moviedet">ID:         <%= ratinggg %></h6>
+    </div>
+  </div>
+
+</div>
+
+
+
+
+  <%- include("footer"); -%>
